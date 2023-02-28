@@ -1,0 +1,4 @@
+baseURL = 'http://spmnoticias.online/'
+languageCode = 'es-mx'
+title = 'SPM Noticias'
+theme = 'ananke'

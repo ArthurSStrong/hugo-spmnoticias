@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SPM Noticias</title>
+    <link>http://spmnoticias.online/</link>
+    <description>Recent content on SPM Noticias</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-mx</language>
+    <lastBuildDate>Tue, 28 Feb 2023 16:25:23 -0600</lastBuildDate><atom:link href="http://spmnoticias.online/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reeditarán libros del agente 007 para corregir términos racistas</title>
+      <link>http://spmnoticias.online/posts/my-first-post/</link>
+      <pubDate>Tue, 28 Feb 2023 16:25:23 -0600</pubDate>
+      
+      <guid>http://spmnoticias.online/posts/my-first-post/</guid>
+      <description>James Bond, el agente 007, es uno de los mayores iconos en la cultura pop a nivel mundial. Concebida en la década de 1950, la saga de Ian Fleming se ha adaptado exitosamente al paso del tiempo. Y gracias a la variedad de tramas desarrolladas en el cine, la historia ha fascinado a múltiples generaciones.
+Ahora, los libros que sirvieron como base para estas adaptaciones cinematográficas pasarán por una reedición. Las modificaciones estarán enfocadas y limitadas a términos racistas contra individuos negros.</description>
+    </item>
+    
+  </channel>
+</rss>
