@@ -30,20 +30,43 @@ La idea del proyecto es probar qué tan lejos se puede llevar un blog de noticia
 └── .github/workflows/ # Workflow de compilación y publicación
 ```
 
-## Uso local
+## Probar el sitio en local
 
-Requisitos: Hugo extended 0.160 o superior y git.
+Requisitos: [Hugo extended](https://gohugo.io/installation/) 0.160 o superior (la versión extended es necesaria para el procesamiento de imágenes) y git.
 
 ```bash
-# Clonar con el tema incluido
+# macOS, con Homebrew
+brew install hugo
+```
+
+### Clonar el repositorio
+
+```bash
 git clone --recurse-submodules https://github.com/ArthurSStrong/hugo-spmnoticias.git
 cd hugo-spmnoticias
+```
 
-# Servidor de desarrollo con recarga automática (incluye borradores)
+Si ya tenías el repositorio clonado sin el tema (la carpeta `themes/ananke` aparece vacía), descárgalo con:
+
+```bash
+git submodule update --init --recursive
+```
+
+### Levantar el servidor de desarrollo
+
+```bash
 hugo server -D
 ```
 
-El sitio queda disponible en http://localhost:1313/hugo-spmnoticias/.
+El sitio queda disponible en http://localhost:1313/hugo-spmnoticias/, con recarga automática cada vez que guardas un cambio. El flag `-D` incluye los artículos marcados como `draft: true`, para poder revisarlos antes de publicarlos. Para detener el servidor, presiona `Ctrl+C`.
+
+Para revisar el sitio exactamente como se vería publicado (sin borradores, con el HTML minificado), compílalo en vez de levantar el servidor:
+
+```bash
+hugo --gc --minify
+```
+
+Esto genera el sitio en la carpeta `public/`, que no se sube al repositorio.
 
 ## Escribir un artículo
 
